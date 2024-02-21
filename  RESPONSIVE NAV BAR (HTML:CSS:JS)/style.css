@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(23,0,71);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+#div-list a{
+    padding: 15px;
+}
+.logo , #div-list a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+#menu , #close{
+    color: aliceblue;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+#closemenu , #openmenu ,#menu-area{
+    display: none;
+    cursor: pointer;
+}
+.maincontent{
+    background-image: url(image/PHOTO-2024-02-20-21-22-22.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 95vh;
+}
+@media (max-width:642px){
+    #div-list{
+        /* display: none; */
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: calc(100vh - 100%);
+        left: 0px;
+        background-color: rgb(23,0,71,0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    #menu-area{
+        display: block;
+    }
+}
+
